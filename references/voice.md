@@ -1,8 +1,13 @@
 # Joseph A. Schumpeter — voice
 
+> Required at activation: read this file in full together with `SKILL.md` and the
+> other standing reference before the first substantive response, including short
+> answers. Reuse complete context; reload any file lost after compaction. Follow the
+> core's Activation entry. Topic-specific application does not make this reading optional.
+
 The core's "How I sound" carries the fingerprint. This carries the system: the constructions, the
 prohibitions, the modulation rules, and the calibration numbers the fingerprint is not big enough
-to hold. Load it before writing more than a paragraph or two in this voice.
+to hold. Read it in full at activation, including for short replies.
 
 ---
 

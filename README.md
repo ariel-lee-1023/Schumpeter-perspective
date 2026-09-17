@@ -8,13 +8,13 @@ It is a *thinking-style tool* for analysis and ideation. It is not affiliated wi
 
 ## What it is
 
-Plain Markdown, no code and no dependencies. A front-loaded core file carries the persona; a `references/` tree carries the depth, loaded on demand rather than all at once.
+Plain Markdown, no code and no dependencies. The core, voice and frameworks are read in full at activation; additional work modules in `references/` supply depth when needed.
 
-That makes it usable anywhere a model can be given text: drop it into an agent framework that reads instruction files from a directory, paste the core file in as a system prompt, attach it to a chat, retrieve the reference modules through RAG, or read it yourself as a study aid. The core is deliberately kept small (~4,200 tokens) so it fits in a system prompt with room to spare; the reference files are sized for individual retrieval (~1,200–3,900 tokens each).
+That makes it usable anywhere a model can be given text: drop it into an agent framework that reads instruction files from a directory, provide the core together with the full voice and frameworks as a system prompt or chat attachment, retrieve the reference modules through RAG, or read it yourself as a study aid. The core is deliberately kept small (~4,200 tokens) so it fits in a system prompt with room to spare; the reference files are sized for individual retrieval (~1,200–3,900 tokens each).
 
-Two of the reference modules are standing and cross-corpus: `frameworks.md` (what he thinks with) and `voice.md` (how he sounds). The core carries only a style *fingerprint* by design; `voice.md` carries the system — constructions, the measured avoid-list, modulation rules with absolute targets per register, and the baseline the fidelity tests measure against. Load it whenever the task is to write in the voice at length rather than only to reason in the frame.
+Two of the reference modules are standing and cross-corpus: `frameworks.md` (what he thinks with) and `voice.md` (how he sounds). The core carries only a style *fingerprint* by design; `voice.md` carries the system — constructions, the measured avoid-list, modulation rules with absolute targets per register, and the baseline the fidelity tests measure against. Read both standing modules in full before the first substantive response, including short answers.
 
-Only one convention is tool-specific: the YAML frontmatter at the top of `SKILL.md`, which agent runtimes use for discovery and auto-loading. Nothing else depends on it — strip the frontmatter and the file still works as a prompt.
+Only one convention is tool-specific: the YAML frontmatter at the top of `SKILL.md`, which agent runtimes use for discovery and auto-loading. Nothing else depends on it — strip the frontmatter and supply the body together with the complete voice and framework modules as a prompt.
 
 ## What it does
 
@@ -56,10 +56,10 @@ Confidence boundaries are documented in [`fidelity-ledger/provenance.md`](fideli
 ```
 schumpeter-perspective/
 ├── SKILL.md                    core persona, front-loaded — load this first, always
-├── references/                 depth, loaded on demand — host-agent-facing, never contains
+├── references/                 standing references plus topic depth; host-agent-facing, never contains
 │   │                          provenance or episodic material
 │   ├── frameworks.md           named constructs in his exact senses
-│   ├── voice.md                the measured expressive system — load before writing at length
+│   ├── voice.md                the measured expressive system; required at activation
 │   └── clusters/               one module per source work
 │       ├── c01-c03-business-cycles.md
 │       ├── c04-c08-capitalism-socialism-democracy.md
@@ -75,15 +75,28 @@ schumpeter-perspective/
 └── CHANGELOG.md
 ```
 
-The core is front-loaded on purpose: the highest-identification content sits at the top, so that if the file is truncated from the end — by a context limit, by compaction, by a shorter excerpt — what survives is still the part that carries the voice.
+The core places characteristic material near the top. Its activation contract still requires the complete core, voice and frameworks; reload any missing content after truncation or compaction.
+
+## Activation
+
+Before the first substantive answer, read the complete [SKILL.md](SKILL.md),
+[voice](references/voice.md) and [frameworks](references/frameworks.md), including for
+short replies. The core supplies the perspective, voice supplies its expressive
+system, and frameworks supplies its conceptual and reasoning distinctions. Reuse files
+already fully retained in context; reload missing files after compaction. Add topic,
+work or mode modules when relevant. For a chat without file access, supply all three
+complete texts at the start.
+
+This loading-only update has not been reassessed. Existing assessment results remain
+attached to the runtime inputs and scope originally tested.
 
 ## Using it
 
-**As a system prompt.** Paste `SKILL.md` in whole. Strip the YAML frontmatter if your setup does not expect it; nothing below it depends on the frontmatter.
+**As a system prompt.** Supply the complete `SKILL.md`, `references/voice.md` and `references/frameworks.md`. Strip the YAML frontmatter if your setup does not expect it; nothing below it depends on the frontmatter.
 
-**In an agent framework.** Put the directory wherever the runtime looks for instruction modules. The last section of `SKILL.md` tells the host agent which reference file to pull for which kind of question, so the depth stays out of the context window until it is wanted.
+**In an agent framework.** Put the directory wherever the runtime looks for instruction modules. The last section of `SKILL.md` tells the host agent which reference file to pull for which kind of question, so additional work-specific depth is selected after the core and both standing references are loaded.
 
-**With retrieval.** Index `references/` and let the core file's routing section drive which module gets fetched. Each is self-contained and sized for a single retrieval.
+**With retrieval.** Fetch the complete voice and frameworks at activation, then use the core's routing section to select additional work modules. Each is self-contained and sized for a single retrieval.
 
 **Without a model at all.** `frameworks.md` is a usable reference on Schumpeter's terminology, and `fidelity-ledger/provenance.md` documents exactly which claim rests on which source.
 
