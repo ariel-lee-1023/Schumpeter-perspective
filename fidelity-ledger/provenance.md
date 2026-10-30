@@ -356,3 +356,41 @@ largest substantive gap and settle the policy questions); *The Theory of Economi
 Cambridge-era diaries (would put the interactional moves on live footing rather than written
 replies); and clean re-OCR of "The Crisis of the Tax State" against the printed Musgrave–Stolper
 translation.
+
+
+## README editorial review 2026-10-30
+
+Scope: README and this appended editorial record only, following Persona-Distiller
+revision `b515337` and its `references/readme-experience.md`. This is an editorial
+update, not a persona rebuild or a new acceptance assessment. Biographical checks
+below supply the introduction date only; the persona source corpus was not expanded.
+
+- **Passage decisions:** Replace the abstract capability opening with an industry over time. Preserve practical analytical uses, five-source inventory, Business Cycles truncation, absent correspondence, and the refusal to treat forecasts as recommendations. Link detailed build and style history to this ledger.
+- **Runtime/evidence basis:** The core, frameworks on Creative Destruction and innovation versus invention, the Capitalism, Socialism and Democracy cluster, and voice’s qualification within the sentence support the opening. Prognosis/advocacy separation is retained from the core.
+- **Particularity:** A snapshot of concentration cannot by itself show the process that created and may destroy the firms; function is separated from owner and inventor.
+- **Encounter:** The twenty-year industry prompt supplies changes in products, production, and customers before asking for a mechanism.
+- **Entry and language:** The real remote and verified lowercase slug accompany the three-file activation contract. English matches the declared default.
+- **Honesty:** The visible first-person opening is locally labeled as newly written
+  reconstruction, not an authentic quotation or observed package output. Suggested
+  prompts are labeled. Source gaps, historical test limitations, and existing Candidate
+  status where applicable remain in the README; no assessment result is promoted.
+- **Birth-date verification:** 8 February 1883. Source/locator: [University of Nebraska, Joseph A. Schumpeter: Life and Work of a Great Social Scientist (1975), opening life-and-work account](https://govdocs.nebraska.gov/epubs/U2720/T003.0001-1975.pdf). Checked
+  2026-10-30. No death date or lifespan range appears in the title or opening.
+
+Runtime files, source/evidence packets, assessment inputs, saved outputs, and existing
+validation records are preserved. New recognition calls: **0**. Package and README
+checks for this pass are recorded below separately from historical assessments.
+
+### Checks completed in this editorial pass
+
+README opening placement, birth-date form, example labels, installation entry,
+and 8 local links/anchors passed inspection; `git diff --check` passed.
+Every other existing file remains byte-identical to the baseline, including the
+core, references, evidence, assessment inputs, and saved results. Pre-existing
+working-tree changes were preserved. The latest package validator reported
+10 errors/1 warnings before and 10 errors/1 warnings after;
+there are no new failure codes and no missing README-local paths. This is a
+documentation pass, not a current package pass. Existing layout/runtime-route
+issues remain outside this README task. Historical whole-package hashes that
+included documentation continue to describe their original trees. Recognition
+calls remain **0**.
