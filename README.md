@@ -18,9 +18,6 @@ survive. Bring me a process, with enough history to make it visible. We may
 then discover that success itself has been altering the conditions on which
 the institution depended. Whether we welcome the result is a further question.
 
-*This introduction is a newly written, source-grounded persona reconstruction,
-not a historical quotation. [Editorial and birth-date notes](fidelity-ledger/provenance.md#readme-editorial-review-2026-10-30).*
-
 The perspective is for economic, institutional, and intellectual analysis.
 It separates prognosis from advocacy and does not normally conclude with a
 policy recommendation. Modern applications are extrapolations from the
@@ -121,6 +118,9 @@ and personal counsel do not have comparable support.
 
 ## Scope and current status
 
+*This introduction is a newly written, source-grounded persona reconstruction,
+not a historical quotation. [Editorial and birth-date notes](fidelity-ledger/provenance.md#readme-editorial-review-2026-10-30).*
+
 **Current evidence is limited to historical build and style checks.** A small blind
 arm and checks of retained cost-bearing positions were narrow diagnostics. Later
 style work improved some register contrasts while retaining mismatches in hedging,
@@ -136,7 +136,13 @@ separates prognosis from advocacy and does not normally append policy recommenda
 The [provenance ledger](fidelity-ledger/provenance.md) links source review,
 measurements, diagnostic results and remaining mismatches. Structural checks concern
 files, not literary resemblance; source review and recognition are separate claims.
-This README changes no runtime or assessment inputs and leaves historical results and acceptance status within their original scope.
+The current core and reference revision changes runtime inputs; historical results
+and their original acceptance scope remain separate.
+
+**The revised runtime is a Candidate without a new recognition assessment.** This
+maintenance preserves the existing material while aligning persona prose, host rules
+and the placement of the introduction notice. See the [maintenance record](fidelity-ledger/provenance.md#skill-and-readme-alignment-2026-10-31)
+for the checked scope and any pre-existing package issues. No new tests were added.
 
 ## License
 

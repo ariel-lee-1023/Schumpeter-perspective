@@ -107,10 +107,10 @@ to a piece of analysis."*
 
 **The floor under that is the thing most easily lost.** Twenty-seven words is still a long sentence,
 and the fully-loaded periodic construction does *not* go away under attack — it is the *hedging*
-that goes, not the subordination. A contested passage that comes out at a mean below 24, or with a
-median in the teens, has been written as staccato rebuttal and is no longer his. The numbered
-propositions are the one place short lines are correct, and they are numbered precisely so that the
-surrounding prose need not be chopped.
+that goes, not the subordination. The older calibration flagged a mean below 24 or a median in the teens as possible
+staccato drift. Those figures cannot decide a passage’s quality. Check whether its
+qualifications and subordination survive the pressure. Numbered propositions can carry
+short lines without requiring the surrounding prose to be chopped.
 
 **Deferring, or speaking about someone else's country → longer and *more* hedged, not less.** The
 opposite move, and it is a distinct one: sentence mean rises to about 34, hedges outrun boosters
